@@ -1,19 +1,34 @@
 <!DOCTYPE html>
+{% load static %}
+{% load admin_urls %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% load static %}
+
     <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/mine.css' %}">
     <title>Title</title>
 
 </head>
 <body>
-<div class="top-nav-back"></div>
-<iframe src="http://www.taobao.com" height="480px"  scrolling="yes"></iframe>
 
+<div class="top-nav-back">
+    <div class="container">
+        <h1 id="welcome">welcome my blog</h1>
+        <div class="fr">
+            <ul>
+                <li><a href="#" target="_self">个人简历</a></li>
+                <li><a href="#" target="_self">我们的爱</a></li>
+                <li><a href="{% url 'myblog:android' %}" target="_self">android</a></li>
+                <li><a href="#" target="_self">python</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
 
 
 <script src="{% static 'bootstrap/js/jquery-3.3.1.min.js' %}" rel="script"></script>

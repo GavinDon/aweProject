@@ -87,7 +87,7 @@ celerybeat-schedule
 .env
 .venv
 env/
-#venv/
+venv/
 ENV/
 env.bak/
 venv.bak/
@@ -110,7 +110,6 @@ venv.bak/
 aweProject/__pycache__/
 myblog/__pycache__/
 myblog/migrations/__pycache__/
-myblog/static/js/
 venv/Include/
 venv/Lib/site-packages/MySQLdb/__pycache__/
 venv/Lib/site-packages/MySQLdb/constants/__pycache__/

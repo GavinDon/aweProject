@@ -6,14 +6,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/mine.css' %}">
-    <title>Title</title>
 
+    <title>我的博客</title>
+    <script>
+        //jquery选择器
+        $(document).ready(function () {
+            $("#saa").click(function () {
+                alert("aaaaaaaa")
+            })
+        })
+    </script>
 </head>
 <body>
-
+{#导航栏#}
 <div class="top-nav-back">
     <div class="container">
         <h1 id="welcome">welcome my blog</h1>
@@ -29,9 +36,23 @@
     </div>
 
 </div>
+<div>
+    <form action="testfrom/" method="post">
+        姓名: <input type="text" name="mname" required> <br>
+        密码: <input type="password" name="psw" required> <br>
+        {% csrf_token %}
+        <input type="submit" value="提交">
+    </form>
+</div>
+<img id='mg' src="{% static 'img/abc.jpg' %}" width="100px" height="100px">
+<div class="ghost-center">
+    <P>你毕业才两年怎么会有三年的经验，你毕业才两年怎么会有三年的经验？</P>
+
+</div>
 
 
 <script src="{% static 'bootstrap/js/jquery-3.3.1.min.js' %}" rel="script"></script>
 <script src="{% static 'bootstrap/js/bootstrap.min.js' %}" rel="script"></script>
+<script src="{% static 'javascript/main.js' %}" type="text/javascript"></script>
 </body>
 </html>

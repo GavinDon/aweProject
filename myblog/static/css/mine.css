@@ -14,6 +14,10 @@ body {
     float: right;
 }
 
+.cb {
+    clear: both;
+}
+
 .top-nav-back {
     background-color: #0C4B33;
     width: 100%;
@@ -38,7 +42,7 @@ ul li {
 }
 
 ul li > a {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: white;
     vertical-align: center;
     line-height: 7rem;
@@ -48,4 +52,33 @@ ul li > a {
 ul li > a:hover {
     color: #6f42c1;
 }
+
+form {
+    display: block;
+    margin: 10px;
+}
+
+.ghost-center {
+    border: 2px dashed #f5c6cb;
+    padding: 10px 0;
+}
+
+.ghost-center ::before {
+    height: 100%;
+    content: " ";
+    width: 1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ghost-center  p {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #0C4B33;
+    color: white;
+    margin: 0 auto;
+    width: 12rem;
+    padding: 1rem;
+}
+
 
